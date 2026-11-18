@@ -1,0 +1,180 @@
+/* GENERAL */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #c084fc;
+    color: #000000;
+}
+
+/* NAVIGATION */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 8%;
+    background: #e9a8ff;
+}
+
+.logo {
+    color: #6b21a8;
+    font-size: 28px;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+.nav-links a {
+    color: #000000;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nav-links a:hover {
+    color: #ec4899;
+}
+
+/* HOME */
+.home {
+    min-height: 85vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 40px 20px;
+    background: linear-gradient(
+        135deg,
+        #c084fc,
+        #f0abfc,
+        #a5b4fc
+    );
+}
+
+.home h1 {
+    font-size: 48px;
+    margin: 15px 0;
+    color: #000000;
+}
+
+.home h2 {
+    color: #7e22ce;
+    margin-bottom: 20px;
+}
+
+.home p {
+    max-width: 650px;
+    line-height: 1.8;
+    color: #000000;
+}
+
+/* BUTTONS */
+.buttons {
+    margin-top: 25px;
+}
+
+.btn {
+    display: inline-block;
+    background: #ec4899;
+    color: #000000;
+    text-decoration: none;
+    padding: 12px 25px;
+    border-radius: 25px;
+    margin: 8px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #fde047;
+    transform: translateY(-3px);
+}
+
+/* ABOUT */
+#about {
+    padding: 80px 10%;
+    text-align: center;
+    background: #d8b4fe;
+}
+
+#about h2 {
+    color: #7e22ce;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+#about p {
+    color: #000000;
+    line-height: 1.8;
+}
+
+/* CIRCLE */
+.circle {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    background: #f9a8d4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px auto;
+    font-size: 20px;
+    font-weight: bold;
+    border: 5px solid #7e22ce;
+}
+
+/* CONTACT */
+#contact {
+    padding: 80px 10%;
+    text-align: center;
+    background: #c4b5fd;
+}
+
+#contact h2 {
+    color: #7e22ce;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+#contact p {
+    margin: 15px 0;
+    color: #000000;
+}
+
+.contact-info a {
+    color: #9333ea;
+    font-weight: bold;
+}
+
+/* MOBILE */
+@media (max-width: 600px) {
+    .navbar {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .home h1 {
+        font-size: 32px;
+    }
+
+    .home h2 {
+        font-size: 20px;
+    }
+}
